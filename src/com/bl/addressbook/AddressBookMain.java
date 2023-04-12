@@ -1,62 +1,52 @@
 package com.bl.addressbook;
+import java.util.*;
+
+         class NewContact{
+
+             Scanner sc = new Scanner(System.in);
 
 
- class contacts{
+             String Firstname;
+             String Lastname;
+             String Address;
+             String city;
 
-         String Firstname;
-         String Lastname;
-         String Address;
-         String city;
-         int pincode;
-         int phonenumber;
-         String email;
+             String email;
 
-         }
+             int pincode;
+             int phonenumber;
 
-         class newcontacts{
 
-             String Firstname ="jyoti";
-             String Lastname = "kale";
-             String Address = "beed MH";
-             String city = "beed";
-             int pincode = 234324;
-             int phonenumber = 123456789;
-             String email = "jyptikale@gmail.com";
 
          }
-public class AddressBookMain extends newcontacts {
+public class AddressBookMain extends NewContact {
     public static void main(String[] args) {
 
-        System.out.println("Welcome to Address Book");
+        Scanner sc = new Scanner(System.in);
 
-        contacts c = new contacts();
-        c.Firstname="kirti";
-        c.Lastname = "Madan";
-        c.Address = "jalna";
-        c.phonenumber = 955656687;
-        c.pincode = 431203;
-        c.email = "kirtimadan125@gmail.com";
-        c.city = "jalna";
+        //NewContact obj = new NewContact();
 
-        System.out.println(c.Firstname);
-        System.out.println(c.Lastname);
-
-        System.out.println(c.Address);
-
-        System.out.println(c.phonenumber);
-        System.out.println(c.pincode);
-        System.out.println(c.email);
-        System.out.println(c.city);
-        System.out.println("Add New Persone Details...........!");
-newcontacts obj = new newcontacts();
-        System.out.println(obj.Firstname);
-        System.out.println(obj.Lastname);
-        System.out.println(obj.Address);
-        System.out.println(obj.city);
-        System.out.println(obj.pincode);
-        System.out.println(obj.phonenumber);
-        System.out.println(obj.email);
-
+        System.out.println("Enter name");
+        String Firstname = sc.nextLine();
+        System.out.println("Enter last name");
+        String Lastname = sc.nextLine();
+        System.out.println("Enter Address");
+        String Address = sc.nextLine();
+        System.out.println("Enter city");
+        String city = sc.nextLine();
+        System.out.println("Enter email");
+        String email = sc.nextLine();
+        System.out.println("Enter pincode");
+        int pincode = sc.nextInt();
+        System.out.println("Enter phonenumber");
+        int phonenumber = sc.nextInt();
+        System.out.println(Firstname);
+        System.out.println(Lastname);
+        System.out.println(Address);
+        System.out.println(city);
+        System.out.println(email);
+        System.out.println(pincode);
+        System.out.println(phonenumber);
     }
 
 }
