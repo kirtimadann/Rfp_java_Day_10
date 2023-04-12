@@ -12,7 +12,19 @@ package com.bl.addressbook;
          String email;
 
          }
-public class AddressBookMain {
+
+         class newcontacts{
+
+             String Firstname ="jyoti";
+             String Lastname = "kale";
+             String Address = "beed MH";
+             String city = "beed";
+             int pincode = 234324;
+             int phonenumber = 123456789;
+             String email = "jyptikale@gmail.com";
+
+         }
+public class AddressBookMain extends newcontacts {
     public static void main(String[] args) {
 
         System.out.println("Welcome to Address Book");
@@ -35,8 +47,15 @@ public class AddressBookMain {
         System.out.println(c.pincode);
         System.out.println(c.email);
         System.out.println(c.city);
-
-
+        System.out.println("Add New Persone Details...........!");
+newcontacts obj = new newcontacts();
+        System.out.println(obj.Firstname);
+        System.out.println(obj.Lastname);
+        System.out.println(obj.Address);
+        System.out.println(obj.city);
+        System.out.println(obj.pincode);
+        System.out.println(obj.phonenumber);
+        System.out.println(obj.email);
 
     }
 
